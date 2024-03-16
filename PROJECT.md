@@ -108,6 +108,7 @@ return 0;
 }
  
 # 6.	EXPLANATION: -
+
 1.	SetColor Function:
 
 void SetColor(int ForgC) {
@@ -125,7 +126,7 @@ This function is responsible for changing the text color in the console. It take
 It	uses	Windows	API	functions	(GetStdHandle,	GetConsoleScreenBufferInfo, SetConsoleTextAttribute) to manipulate the console text color.
 The color information is combined with the current console attributes to set the desired text color.
 
-2.	struct Resume:
+2.	Struct Resume:
 struct Resume {
 
 // Structure to store resume information char first_name[50];
@@ -137,7 +138,7 @@ char computer_skills[50]; char additional_skills[50];
 
 This structure defines the blueprint for storing information related to a resume, such as first name, last name, email, etc.
 
-3.	main Function:
+3.	Main Function:
 int main() {
 
 // Main function where the program execution begins struct Resume resume;
@@ -166,9 +167,13 @@ There is a redundancy in the function declaration void SetColor(int ForgC);. It 
 The code prompts the user to enter information for various fields and then displays the entered information in a formatted manner.
 
 # 7. STEPS PERFORMED: -
-1.	Header Files:
 
-#include <stdio.h> #include <string.h> #include <stdlib.h> #include <windows.h>
+1.	Header Files:
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <windows.h>
+
 Included necessary header files:
 
 <stdio.h> for standard input/output functions.
@@ -180,16 +185,13 @@ Included necessary header files:
 <windows.h> for Windows API functions used to manipulate console properties.
  
 2.	SetColor Function:
-
-
 void SetColor(int ForgC) { WORD wColor;
 HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE); CONSOLE_SCREEN_BUFFER_INFO csbi;
 
-if(GetConsoleScreenBufferInfo(hStdOut, &csbi)) { wColor = (csbi.wAttributes & 0xF0) + (ForgC & 0x0F); SetConsoleTextAttribute(hStdOut, wColor);
+if(GetConsoleScreenBufferInfo(hStdOut, &csbi)
+) { wColor = (csbi.wAttributes & 0xF0) + (ForgC & 0x0F); SetConsoleTextAttribute(hStdOut, wColor);
 }
-
 return;
-
 }
 
 Defined a function SetColor to change the console text color.
@@ -197,42 +199,26 @@ Defined a function SetColor to change the console text color.
 Used Windows API functions (GetStdHandle, GetConsoleScreenBufferInfo, SetConsoleTextAttribute) to manipulate console attributes.
 The function takes an integer ForgC representing the foreground color.
 
-3.	struct Resume:
-
-
+3.	Struct Resume:
 struct Resume {
-
 char first_name[50]; char last_name[50]; char email[50];
 char phone_no[15]; char address[100]; char objective[200]; char qualification[50];
- 
 char computer_skills[50]; char additional_skills[50];
 };
 
 Defined a structure Resume to store information related to a resume, including fields for first name, last name, email, etc.
+
 4.	main Function:
-
-
 int main() {
-
 struct Resume resume;
-
 SetColor(2);
-
 printf("Welcome to the Resume Builder!\n\n"); SetColor(1);
-
 // User input for resume information
-
 // ...
-
 
 // Displaying entered information with different text colors
-
 // ...
-
-
-
 return 0;
-
 }
 
 The main function is the entry point of the program.
@@ -242,39 +228,38 @@ Created an instance of the struct Resume to store user's resume information.
 Used SetColor to set text colors for the welcome message and user input prompts.
 
 5.	User Input Section:
-
 The code prompts the user to enter information for various fields (e.g., first name, last name, email, etc.) using printf and fgets.
+
 6.	Displaying Entered Information:
- 
-
 SetColor(8);
-
 printf("\n--- Your Resume ---\n"); SetColor(9);
 printf("Name: %s", resume.first_name);
-
 // Displaying other fields...
 
 Set text colors for displaying the entered resume information.
 
 Used printf to display the entered information in a formatted manner.
 
+# 8.	RESULT: -
 
-
-
-8.	RESULT: -
 ![image](https://github.com/Arunima2004/Resume-Builder/assets/163457506/4a63eb2f-0a6f-4ff2-a272-6de6e47e03bb)
-
-
  
-9.	FUTURE SCOPE: -
+# 9.	FUTURE SCOPE: -
+
 •	Redundancy Removal: Remove redundant declarations like void SetColor(int ForgC);.
+
 •	Input Validation: Enhance user input validation to ensure robustness against invalid or unexpected inputs.
+
 •	Field Name Correction: Correct the display section to use accurate field names from the struct Resume.
+
 •	Formatting Improvement: Enhance the formatting of the displayed resume for better readability.
+
 •	Additional Features: Consider adding more features, such as error handling, additional input validation, or the ability to edit and save the resume.
-CONCLUSION: -
+
+# 10. CONCLUSION: -
+
 In conclusion, the provided C code serves as a simple console-based resume builder. It utilizes a structure (struct Resume) to store information related to a person's resume and incorporates a function (SetColor) to enhance the visual appearance by changing the console text color.
-BIBLIOGRAPHY: -
+# 11. BIBLIOGRAPHY: -
 
 https://chat.openai.com/c/31147865-0a48-4453-9f5c-d82b277b6ec0
 
