@@ -1,13 +1,16 @@
 # 1.	INTRODUCTION
+
 A resume builder is an interactive online form that allows you to input your information and build out a clean, organized resume. Using select resume templates, a resume builder helps job seekers create professional resumes that showcase their talents while saving them time. A good resume builder provides an easy-to-use interface that walks you through each of the most important resume sections. The online interface should lead you through a series of questions that will help you build out your resume and provide suggestions along the way. There is nothing illegal about using a resume builder. They are simply tools to help you build a better, faster resume. Hiring managers don’t spend a lot of time looking through every resume. They skim through, taking about six seconds to determine whether or not you are a good fit for the role. Including the right keywords in your skills section and job description bullet points is important. Including a well-crafted summary can also go a long way. If your resume warrants a deeper look, the hiring manager will pay attention to other important factors. Your relevant work experience and career progression as well as the impact you have had in each of your roles will also matter to them. Be sure to quantify any achievement you can. While they are skimming, they will notice glaring errors. Don’t exaggerate. And, be sure to double, triple, and quadruple-check for spelling and grammatical errors.
 
 # 2.	COMPONENT DESCRIPTION:
+
 Software: -Programming Language: c VScode (Compiler - MinGW)
 
 Hardware: - HP envy AMD RADEON Graphics i7 (13+ generation), RYZEN
 16 GB RAM
  
 # 3.	APPLICATIONS: -
+
 •	Job Hunting: The most common use of a resume builder is to create a professional resume when applying for jobs. It helps job seekers showcase their skills and experience effectively.
 
 •	Career Changes: When transitioning to a new career or industry, a resume builder can help highlight transferable skills and relevant experiences.
@@ -19,6 +22,7 @@ Hardware: - HP envy AMD RADEON Graphics i7 (13+ generation), RYZEN
 •	Networking Events: When attending career fairs, conferences, or networking events, having a well-prepared resume can make a strong impression on potential employers or contacts.
 
 # 4.	FEATURES: -
+
 •	User-Friendly Interface
 
 •	Pre-Designed Templates
@@ -46,6 +50,7 @@ Hardware: - HP envy AMD RADEON Graphics i7 (13+ generation), RYZEN
 •	Continuous Updates
  
 # 5.	CODE BLOCK: -
+
    #include <stdio.h>
   	#include <string.h>
   	#include <stdlib.h>
