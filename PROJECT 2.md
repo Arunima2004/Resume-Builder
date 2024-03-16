@@ -3,29 +3,46 @@ A resume builder is an interactive online form that allows you to input your inf
 
 # 2.	COMPONENT DESCRIPTION:
 Software: -Programming Language: c VScode (Compiler - MinGW)
+
 Hardware: - HP envy AMD RADEON Graphics i7 (13+ generation), RYZEN
 16 GB RAM
  
 # 3.	APPLICATIONS: -
 •	Job Hunting: The most common use of a resume builder is to create a professional resume when applying for jobs. It helps job seekers showcase their skills and experience effectively.
+
 •	Career Changes: When transitioning to a new career or industry, a resume builder can help highlight transferable skills and relevant experiences.
+
 •	Internships and Entry-Level Positions: Students and recent graduates often use resume builders to create their first professional resumes for internships or entry-level positions.
+
 •	Freelancing and Gig Work: Freelancers and gig workers can use resume builders to create profiles that they can share on freelance platforms, highlighting their skills and previous projects.
+
 •	Networking Events: When attending career fairs, conferences, or networking events, having a well-prepared resume can make a strong impression on potential employers or contacts.
 
 # 4.	FEATURES: -
 •	User-Friendly Interface
+
 •	Pre-Designed Templates
+
 •	Resume Sections
+
 •	Editing Tools
+
 •	Customization
+
 •	Examples and Tips
+
 •	Privacy and Security
+
 •	Accessibility
+
 •	Mobile Compatibility
+
 •	Feedback and Review
+
 •	Offline Access
+
 •	Multiple Language Support
+
 •	Continuous Updates
  
 # 5.	CODE BLOCK: -
