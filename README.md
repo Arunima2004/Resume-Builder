@@ -5,7 +5,6 @@ A resume builder is an interactive online form that allows you to input your inf
 # 2.	COMPONENT DESCRIPTION:
 
 Software: -Programming Language: c VScode (Compiler - MinGW)
-
 Hardware: - HP envy AMD RADEON Graphics i7 (13+ generation), RYZEN
 16 GB RAM
  
